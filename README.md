@@ -82,15 +82,15 @@ I wish to thanks all the authors for their hard work. It greatly simplifies the 
 <a name="known-issues"></a>
 ## Known issues
 
-* I strongly recommend to run tool in first time **without** `-t, --transform` and without `-c, --codepage` (to get encodings for all source files) and check result log file (by default is `log.txt`) how detection completed. Checking detection before doing transformation helps you to avoid potentially bad conversion in case where detection can go wrong. You can pre convert such files manually or specify `-o, --override` option.
+* I strongly recommend to run tool in a first time **without** `-t, --transform` and without `-c, --codepage` (to get encodings for all source files) and check result log file (by default is `log.txt`) about how detection completed. Checking how detection done before doing transformation helps you to avoid potentially bad conversion in cases where auto-detection can go wrong. You can pre convert such files manually or specify `-o, --override` option.
 
-* I also highly recommend using only specified codepage conversion via `-c, --codepage`. You can repeat conversion for other encodings one by one and assure results. At least *carefully* check log file with encodings distribution (in scan only mode) before doing any transformations.
+* I also highly recommend using only specified codepage conversion via `-c, --codepage` option. You can repeat conversion for other encodings one by one and assure the results. At least *carefully* check log file with encodings distribution (in scan only mode) before doing any transformations.
 
-* There are can be a false detection of similar encoding, e.g. **windows-1251** can be detected as **x-mac-cyrillic**. You can use `-o, --override` option to specify replacement encoding in such condition.
+* There are can be a false detection of similar encodings, e.g. **windows-1251** can be detected as **x-mac-cyrillic**. You can use `-o, --override` option to specify replacement encoding in such conditions.
 
-* If you do not use any of version control systems specify `Backup path` via `-b, --backup` to avoid text corrupt during conversion. It preserves the original folder structure.
+* If you do not use any of version control systems specify `Backup path` via `-b, --backup` to avoid source text lost during conversion. It preserves the original folder structure.
 
-* Any errors (e.g. IO) during the transformation abort conversion potentially leaving files in a partially modified state.
+* Any errors (e.g. IO) during the transformation abort conversion and potentially leave files in a partially modified state.
 
 <a name="usage-examples"></a>
 ## Usage examples
